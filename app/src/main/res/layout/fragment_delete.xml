@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".delete">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtEliminacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/background_dark"
+            android:text="Borrar Registro"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_secondary_variant"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnDeleteXcampo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Borrar Seleccionados" />
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="428dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="635dp">
+
+                    <RadioButton
+                        android:id="@+id/rbt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Patente" />
+
+                    <RadioButton
+                        android:id="@+id/rbt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sistema de Dirección" />
+
+                    <RadioButton
+                        android:id="@+id/rbt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Frenos" />
+
+                    <RadioButton
+                        android:id="@+id/rbt5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Neumáticos y Llantas" />
+
+                    <RadioButton
+                        android:id="@+id/rbt6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Suspención" />
+
+                    <RadioButton
+                        android:id="@+id/rbt7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Alineación" />
+
+                    <RadioButton
+                        android:id="@+id/rbt8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kit de Seguridad" />
+
+                    <RadioButton
+                        android:id="@+id/rbt9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cinturones de Seguridad" />
+
+                    <RadioButton
+                        android:id="@+id/rbt10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Luces" />
+
+                    <RadioButton
+                        android:id="@+id/rbt11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Puertas" />
+
+                    <RadioButton
+                        android:id="@+id/rbt12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vidrios" />
+
+                    <RadioButton
+                        android:id="@+id/rbt13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tubo de Escape" />
+
+                    <RadioButton
+                        android:id="@+id/rbt14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gases" />
+
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnDeleteAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Borrar Todo" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

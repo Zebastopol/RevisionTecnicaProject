@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item
+            android:id="@+id/nav_regis"
+            android:icon="@drawable/ic_regis_fragm"
+            android:title="Registro" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search"
+            android:title="Busqueda" />
+        <item
+            android:id="@+id/nav_edit"
+            android:icon="@drawable/ic_edit"
+            android:title="Modificar" />
+        <item
+            android:id="@+id/nav_delete"
+            android:icon="@drawable/ic_delete"
+            android:title="Borrar" />
+
+</menu>
