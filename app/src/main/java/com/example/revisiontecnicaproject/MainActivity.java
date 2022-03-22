@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -46,7 +48,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     }
 
-
    private ActionBarDrawerToggle setDrawerToogle() {
 
         return new ActionBarDrawerToggle(this, myDrawerLayout, myToolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -76,6 +77,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        switch (item.getItemId()){
+            case R.id.nav_regis:
+                ft.replace(R.id.myFrame, new registro()).commit();
+                break;
+            case R.id.nav_search:
+                ft.replace(R.id.myFrame, new search()).commit();
+                break;
+            case R.id.nav_edit:
+                ft.replace(R.id.myFrame, new modif()).commit();
+                break;
+            case R.id.nav_delete:
+                ft.replace(R.id.myFrame, new delete()).commit();
+                break;
+
+        }
+
         return true;
     }
 }

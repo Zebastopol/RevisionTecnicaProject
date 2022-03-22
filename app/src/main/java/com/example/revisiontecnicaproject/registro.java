@@ -3,20 +3,26 @@ package com.example.revisiontecnicaproject;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 
 
 public class registro extends Fragment {
 
+    private FragmentFirstBinding binding;
 
+    Button   btnGuardar, btnFotografia, btnVerFoto, btnGuardarFoto;
+    EditText txtCodigoIngreso, txtFechaHora, txtDocumentos, txtPatente, txtSistema,
+             txtFrenos, txtNeumaticos_y_llantas, txtSuspencion, txtAlineacion,txtKit_De_Seguridad,
+             txtCinturones_De_Seguridad, txtLuces,txtPuertas, txtVidrios, txtTubo_De_Escape, txtGases,
+             txtObservaciones;
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
@@ -54,6 +60,8 @@ public class registro extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        binding = FragmentFisrtBinding.inflate(inflater, container,false);
+        View view = binding.getRoot();
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_registro, container, false);
     }
